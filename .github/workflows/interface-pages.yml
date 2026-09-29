@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add api-list.html multiline.txt multiline-urls.txt interface_check_summary.json
+          git add api-list.html multiline.txt multiline-urls.txt interface_check_summary.json tvbox-merged.json
           git diff --cached --quiet || git commit -m "chore: update interface pages"
           git push origin HEAD:${GITHUB_REF_NAME}
