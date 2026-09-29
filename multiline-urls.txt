@@ -3,6 +3,8 @@ https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/嗷呜.j
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/幸福年年.json
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/更新专用接口.json
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量py聚合接口.json
+https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量直播线路.json
+https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量直播聚合接口.json
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量采集聚合接口.json
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/菠菜pro.json
 https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/饭太硬.json
