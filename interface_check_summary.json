@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-09-29T12:56:19Z",
+  "raw_prefix": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main",
+  "tvbox_valid": 8,
+  "ry_valid": 8,
+  "live_total": 25,
+  "tvbox_files": [
+    {
+      "filename": "南风.json",
+      "path": "tvbox/南风.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/南风.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 85,
+      "type3_count": 85,
+      "jar_count": 32,
+      "has_spider": true,
+      "has_lives": true
+    },
+    {
+      "filename": "嗷呜.json",
+      "path": "tvbox/嗷呜.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/嗷呜.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 78,
+      "type3_count": 78,
+      "jar_count": 1,
+      "has_spider": true,
+      "has_lives": true
+    },
+    {
+      "filename": "幸福年年.json",
+      "path": "tvbox/幸福年年.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/幸福年年.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 105,
+      "type3_count": 105,
+      "jar_count": 0,
+      "has_spider": true,
+      "has_lives": true
+    },
+    {
+      "filename": "更新专用接口.json",
+      "path": "tvbox/更新专用接口.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/更新专用接口.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 11,
+      "type3_count": 10,
+      "jar_count": 0,
+      "has_spider": true,
+      "has_lives": true
+    },
+    {
+      "filename": "海量py聚合接口.json",
+      "path": "tvbox/海量py聚合接口.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量py聚合接口.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 50,
+      "type3_count": 50,
+      "jar_count": 0,
+      "has_spider": true,
+      "has_lives": false
+    },
+    {
+      "filename": "海量采集聚合接口.json",
+      "path": "tvbox/海量采集聚合接口.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量采集聚合接口.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 78,
+      "type3_count": 1,
+      "jar_count": 0,
+      "has_spider": true,
+      "has_lives": false
+    },
+    {
+      "filename": "菠菜pro.json",
+      "path": "tvbox/菠菜pro.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/菠菜pro.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 206,
+      "type3_count": 155,
+      "jar_count": 1,
+      "has_spider": true,
+      "has_lives": true
+    },
+    {
+      "filename": "饭太硬.json",
+      "path": "tvbox/饭太硬.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/饭太硬.json",
+      "mtime": "2026-09-29 12:56:18",
+      "sites_count": 47,
+      "type3_count": 47,
+      "jar_count": 0,
+      "has_spider": true,
+      "has_lives": true
+    }
+  ],
+  "ry_files": [
+    {
+      "filename": "天神下载.json",
+      "path": "ry/天神下载.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/天神下载.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 4,
+      "items": 30,
+      "type": "local_package"
+    },
+    {
+      "filename": "奇奇下载.json",
+      "path": "ry/奇奇下载.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇下载.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 3,
+      "items": 6,
+      "type": "local_package"
+    },
+    {
+      "filename": "奇奇副本.json",
+      "path": "ry/奇奇副本.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇副本.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 2,
+      "items": 4,
+      "type": "local_package"
+    },
+    {
+      "filename": "应用市场一.json",
+      "path": "ry/应用市场一.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场一.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 12,
+      "items": 47,
+      "type": "local_package"
+    },
+    {
+      "filename": "应用市场二.json",
+      "path": "ry/应用市场二.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场二.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 7,
+      "items": 46,
+      "type": "local_package"
+    },
+    {
+      "filename": "柒豪下载.json",
+      "path": "ry/柒豪下载.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/柒豪下载.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 1,
+      "items": 2,
+      "type": "local_package"
+    },
+    {
+      "filename": "潇洒下载.json",
+      "path": "ry/潇洒下载.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/潇洒下载.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 2,
+      "items": 3,
+      "type": "local_package"
+    },
+    {
+      "filename": "菠菜园下载.json",
+      "path": "ry/菠菜园下载.json",
+      "raw_url": "https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/菠菜园下载.json",
+      "mtime": "2026-09-29 12:56:18",
+      "categories": 4,
+      "items": 14,
+      "type": "local_package"
+    }
+  ]
+}

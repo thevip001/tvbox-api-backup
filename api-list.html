@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TVBox 接口导航</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #0f172a;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .header {
+      padding: 20px;
+      color: white;
+      border-radius: 16px;
+      background: #1e293b;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #cbd5e1;
+    }
+
+    .search {
+      margin-bottom: 20px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 0;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tab.active {
+      background: #2563eb;
+      color: white;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .panel {
+      padding: 18px;
+      border-radius: 16px;
+      background: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+      );
+      gap: 16px;
+    }
+
+    .card {
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background: #f8fafc;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      word-break: break-all;
+    }
+
+    .meta {
+      margin: 6px 0;
+      color: #475569;
+      word-break: break-all;
+    }
+
+    .mono {
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .badge {
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .badge.warn {
+      color: #92400e;
+      background: #fef3c7;
+    }
+
+    .badge.info {
+      color: #1d4ed8;
+      background: #dbeafe;
+    }
+
+    .actions {
+      margin-top: 14px;
+    }
+
+    .copy-btn {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      background: #2563eb;
+    }
+
+    .empty {
+      padding: 20px;
+      text-align: center;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>TVBox 接口导航</h1>
+      <p class="subtitle">
+        分离发布：TVBox 配置 / 本地包 / 直播源
+      </p>
+    </header>
+
+    <div class="search">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="搜索接口名称或地址"
+      >
+    </div>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="tvbox">
+        TVBox 配置
+      </button>
+      <button class="tab" data-tab="ry">
+        本地包
+      </button>
+      <button class="tab" data-tab="live">
+        直播源
+      </button>
+    </nav>
+
+    <section id="tvbox" class="section active">
+      <div class="panel">
+        <p>
+          仅显示合法 JSON 且包含 sites 字段的 TVBox 配置。
+        </p>
+        <div class="grid">
+          
+            <div class="card">
+              <h3>南风.json</h3>
+              <div class="meta"><b>站点数量：</b>85</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/南风.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 85</span><span class="badge warn">jar: 32</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/南风.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>嗷呜.json</h3>
+              <div class="meta"><b>站点数量：</b>78</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/嗷呜.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 78</span><span class="badge warn">jar: 1</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/嗷呜.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>幸福年年.json</h3>
+              <div class="meta"><b>站点数量：</b>105</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/幸福年年.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 105</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/幸福年年.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>更新专用接口.json</h3>
+              <div class="meta"><b>站点数量：</b>11</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/更新专用接口.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 10</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/更新专用接口.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>海量py聚合接口.json</h3>
+              <div class="meta"><b>站点数量：</b>50</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量py聚合接口.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 50</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量py聚合接口.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>海量采集聚合接口.json</h3>
+              <div class="meta"><b>站点数量：</b>78</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量采集聚合接口.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 1</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/海量采集聚合接口.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>菠菜pro.json</h3>
+              <div class="meta"><b>站点数量：</b>206</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/菠菜pro.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 155</span><span class="badge warn">jar: 1</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/菠菜pro.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>饭太硬.json</h3>
+              <div class="meta"><b>站点数量：</b>47</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/饭太硬.json</span>
+              </div>
+              <div class="badges"><span class="badge warn">type=3: 47</span><span class="badge info">spider</span></div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/tvbox/饭太硬.json"
+                  class="copy-btn"
+                >
+                  复制 Raw 地址
+                </button>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <section id="ry" class="section">
+      <div class="panel">
+        <p>
+          ry/*.json 是本地包，不纳入 TVBox 多仓。
+        </p>
+        <div class="grid">
+          
+            <div class="card">
+              <h3>天神下载.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>4</div>
+              <div class="meta"><b>项目数量：</b>30</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/天神下载.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/天神下载.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>奇奇下载.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>3</div>
+              <div class="meta"><b>项目数量：</b>6</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇下载.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇下载.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>奇奇副本.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>2</div>
+              <div class="meta"><b>项目数量：</b>4</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇副本.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/奇奇副本.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>应用市场一.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>12</div>
+              <div class="meta"><b>项目数量：</b>47</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场一.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场一.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>应用市场二.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>7</div>
+              <div class="meta"><b>项目数量：</b>46</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场二.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/应用市场二.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>柒豪下载.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>1</div>
+              <div class="meta"><b>项目数量：</b>2</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/柒豪下载.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/柒豪下载.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>潇洒下载.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>2</div>
+              <div class="meta"><b>项目数量：</b>3</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/潇洒下载.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/潇洒下载.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>菠菜园下载.json</h3>
+              <div class="meta"><b>类型：</b>本地包</div>
+              <div class="meta"><b>分类数量：</b>4</div>
+              <div class="meta"><b>项目数量：</b>14</div>
+              <div class="meta"><b>更新时间：</b>2026-09-29 12:56:18</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/菠菜园下载.json</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://raw.githubusercontent.com/thevip001/tvbox-api-backup/main/ry/菠菜园下载.json"
+                  class="copy-btn"
+                >
+                  复制本地包地址
+                </button>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="section">
+      <div class="panel">
+        <p>
+          从 TVBox 配置的 lives 字段提取直播源。
+        </p>
+        <div class="grid">
+          
+            <div class="card">
+              <h3>Yoursmile</h3>
+              <div class="meta"><b>来源：</b>南风.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Kimentanm</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>综合直播</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">http://193.123.86.190:14888/TV/iptv.php</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="http://193.123.86.190:14888/TV/iptv.php"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>虎牙一起看</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/huyayqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/huyayqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>斗鱼一起看</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/douyuyqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/douyuyqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>B站直播</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/bililive.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/bililive.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>YY轮播</h3>
+              <div class="meta"><b>来源：</b>嗷呜.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/yylunbo.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/yylunbo.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Guovin</h3>
+              <div class="meta"><b>来源：</b>更新专用接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Kimentanm</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>综合直播</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">http://193.123.86.190:14888/TV/iptv.php</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="http://193.123.86.190:14888/TV/iptv.php"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>范明明（需开启V6网络）</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>虎牙一起看</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/huyayqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/huyayqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>斗鱼一起看</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/douyuyqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/douyuyqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>YY轮播</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/yylunbo.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/yylunbo.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Guovin</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Kimentanm1线</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>B站直播</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/bililive.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/bililive.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Yoursmile</h3>
+              <div class="meta"><b>来源：</b>海量直播聚合接口.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Guovin</h3>
+              <div class="meta"><b>来源：</b>菠菜pro.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>Kimentanm</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>综合直播</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">http://193.123.86.190:14888/TV/iptv.php</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="http://193.123.86.190:14888/TV/iptv.php"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>范明明（需开启V6网络）</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>虎牙一起看</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/huyayqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/huyayqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>斗鱼一起看</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/douyuyqk.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/douyuyqk.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <h3>YY轮播</h3>
+              <div class="meta"><b>来源：</b>饭太硬.json</div>
+              <div class="meta"><b>类型：</b>0</div>
+              <div class="meta"><b>地址：</b>
+                <span class="mono">https://sub.ottiptv.cc/yylunbo.m3u</span>
+              </div>
+              <div class="actions">
+                <button
+                  data-copy="https://sub.ottiptv.cc/yylunbo.m3u"
+                  class="copy-btn"
+                >
+                  复制直播地址
+                </button>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((item) => item.classList.remove("active"));
+        tab.classList.add("active");
+
+        document.querySelectorAll(".section").forEach((section) => {
+          section.classList.toggle(
+            "active",
+            section.id === tab.dataset.tab
+          );
+        });
+      });
+    });
+
+    const searchInput = document.getElementById("searchInput");
+
+    searchInput.addEventListener("input", (event) => {
+      const query = event.target.value.toLowerCase().trim();
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.style.display = card.textContent
+          .toLowerCase()
+          .includes(query)
+          ? ""
+          : "none";
+      });
+    });
+
+    document.querySelectorAll(".copy-btn").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const text = button.dataset.copy;
+
+        try {
+          await navigator.clipboard.writeText(text);
+          const oldText = button.textContent;
+          button.textContent = "已复制";
+          setTimeout(() => {
+            button.textContent = oldText;
+          }, 1200);
+        } catch (error) {
+          button.textContent = "复制失败";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
