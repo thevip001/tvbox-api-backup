@@ -1924,6 +1924,13 @@
       "changeable": 1
     },
     {
+      "key": "KafLive",
+      "name": "咖啡体育",
+      "type": 3,
+      "api": "csp_KafLiveAmns",
+      "playerType": 2
+    },
+    {
       "key": "豆瓣",
       "name": "豆瓣 • 公众号:微风的小星",
       "type": 3,
