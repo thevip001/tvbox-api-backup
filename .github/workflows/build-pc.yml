@@ -1,0 +1,39 @@
+name: Build PC Compatible Sources
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tvbox-merged.json"
+      - "scripts/build_pc_sources.py"
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build PC source files
+        run: python scripts/build_pc_sources.py
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/pc-cms.json output/pc-live.txt output/pc-report.json
+          git diff --cached --quiet || git commit -m "chore: update PC-compatible sources"
+          git push
