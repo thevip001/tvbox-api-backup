@@ -1,10 +1,12 @@
-name: Convert TVBox Source for PC
+name: 转电脑端使用接口
 
 on:
   workflow_dispatch:
 
   schedule:
-    - cron: "10 16 * * *"
+    # 每天北京时间 04:10 运行
+    # GitHub Actions 使用 UTC：北京时间 04:10 = UTC 20:10
+    - cron: "10 20 * * *"
 
 permissions:
   contents: write
@@ -15,25 +17,25 @@ concurrency:
 
 jobs:
   convert:
-    name: Generate clean PC JSON
+    name: 生成电脑端接口
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 检出仓库文件
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
-      - name: Set up Python
+      - name: 配置 Python 环境
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Convert TVBox configuration
+      - name: 转换电视端配置为电脑端配置
         run: python scripts/build_pc_sources.py
 
-      - name: Commit generated PC configuration
+      - name: 提交电脑端接口
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -41,8 +43,8 @@ jobs:
           git add pc.json
 
           if git diff --cached --quiet; then
-            echo "pc.json has no changes."
+            echo "pc.json 没有变化，无需提交。"
           else
-            git commit -m "chore: update PC-compatible TVBox source"
+            git commit -m "更新电脑端使用接口"
             git push
           fi
