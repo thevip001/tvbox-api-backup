@@ -1,15 +1,6 @@
 {
   "sites": [
     {
-      "key": "说明",
-      "name": "⚠️说明",
-      "type": 1,
-      "api": "https://0.12yue.de5.net/tvbox/x/lib/多地址说明.json",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
       "key": "ds05",
       "name": "🍀都司资源",
       "type": 0,
