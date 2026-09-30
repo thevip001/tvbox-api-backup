@@ -3,6 +3,9 @@ name: Convert TVBox Source for PC
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "10 16 * * *"
+
 permissions:
   contents: write
 
@@ -19,6 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
