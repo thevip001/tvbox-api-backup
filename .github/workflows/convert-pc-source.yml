@@ -1,0 +1,44 @@
+name: Convert TVBox Source for PC
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: convert-pc-source
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    name: Generate clean PC JSON
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Convert TVBox configuration
+        run: python scripts/build_pc_sources.py
+
+      - name: Commit generated PC configuration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add pc.json
+
+          if git diff --cached --quiet; then
+            echo "pc.json has no changes."
+          else
+            git commit -m "chore: update PC-compatible TVBox source"
+            git push
+          fi
