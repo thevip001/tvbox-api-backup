@@ -6662,12 +6662,13 @@
     },
     {
       "key": "AiDj",
-      "name": "❤️ AI┃短剧",
+      "name": "❤️AI┃短漫剧",
       "type": 3,
       "api": "csp_AiDjGuard",
       "ext": {
         "type": "http://www.饭太硬.net/video",
-        "name": "http://www.饭太硬.net/短剧"
+        "name": "http://www.饭太硬.net/短剧",
+        "DanMu": false
       },
       "indexs": 0,
       "quickSearch": 1,
