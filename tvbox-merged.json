@@ -1138,7 +1138,7 @@
       "api": "csp_HgdhAmns",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "changeable": 0,
       "genre": "shortdrama",
       "ext": "http://www.英格里希嗷呜.top/Hgdh"
     },
@@ -1329,16 +1329,6 @@
       "ext": "http://www.英格里希嗷呜.top/PanHj"
     },
     {
-      "name": "☁️闪电┃4K",
-      "key": "yxWobg",
-      "type": 3,
-      "api": "csp_WobgAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": "http://www.英格里希嗷呜.top/yxWobg"
-    },
-    {
       "name": "☁️多多┃4K",
       "key": "ddWobg",
       "type": 3,
@@ -1375,8 +1365,7 @@
       "api": "csp_GyingAmns",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "ext": "http://www.英格里希嗷呜.top/Gying"
+      "changeable": 1
     },
     {
       "name": "☁️七味┃4K",
@@ -1430,8 +1419,8 @@
       "key": "DMfans",
       "type": 3,
       "api": "csp_DMfansAmns",
-      "searchable": 1,
-      "quickSearch": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "changeable": 1
     },
     {
@@ -1498,7 +1487,7 @@
       "api": "csp_HgggAmns",
       "searchable": 0,
       "quickSearch": 0,
-      "changeable": 1,
+      "changeable": 0,
       "genre": "shortdrama"
     },
     {
@@ -1506,8 +1495,8 @@
       "key": "HHkk",
       "type": 3,
       "api": "csp_HHkkAmns",
-      "searchable": 1,
-      "quickSearch": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "changeable": 1,
       "genre": "shortdrama"
     },
@@ -1600,15 +1589,6 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "http://www.英格里希嗷呜.top/JPian"
-    },
-    {
-      "name": "⭐伊外┃快速",
-      "key": "YIys",
-      "type": 3,
-      "api": "csp_YIysAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
     },
     {
       "name": "⭐爱看┃采集",
