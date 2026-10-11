@@ -59,6 +59,12 @@
       "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
       "ua": "",
       "source": "海量直播聚合接口"
+    },
+    {
+      "name": "Kimentanm2线",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "ua": "",
+      "source": "饭太硬"
     }
   ]
 }
