@@ -7122,7 +7122,7 @@
     },
     {
       "name": "Kimentanm1线",
-      "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": "",
       "source": "海量直播聚合接口"
     },
@@ -7133,10 +7133,10 @@
       "source": "海量直播聚合接口"
     },
     {
-      "name": "Kimentanm2线",
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "name": "Kimentanm1线1线",
+      "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": "",
-      "source": "饭太硬"
+      "source": "海量直播聚合接口"
     },
     {
       "name": "综合直播",
