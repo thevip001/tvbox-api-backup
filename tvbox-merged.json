@@ -6406,7 +6406,7 @@
     },
     {
       "key": "点我切源",
-      "name": "豆豆┃片单",
+      "name": "豆豆┃片单 <修复漫剧、海绵>",
       "type": 3,
       "api": "csp_DouDouGuard",
       "indexs": 1,
@@ -6504,6 +6504,17 @@
       "api": "csp_NewCzGuard",
       "timeout": 10,
       "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
+    {
+      "key": "海绵",
+      "name": "🐬海绵┃不卡",
+      "type": 3,
+      "api": "csp_HmysGuard",
+      "timeout": 10,
+      "playerType": "2",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -6648,7 +6659,7 @@
       "ext": {
         "type": "http://www.饭太硬.net/video",
         "name": "http://www.饭太硬.net/短剧",
-        "DanMu": false
+        "danMu": false
       },
       "indexs": 0,
       "quickSearch": 1,
