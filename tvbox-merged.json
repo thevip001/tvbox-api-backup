@@ -1415,13 +1415,14 @@
       "changeable": 1
     },
     {
-      "name": "🐱番薯┃动漫",
-      "key": "DMfans",
+      "name": "🐱冬瓜┃动漫",
+      "key": "DMxigua",
       "type": 3,
-      "api": "csp_DMfansAmns",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 1
+      "api": "csp_DMxiguaAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "http://www.英格里希嗷呜.top/DMxigua"
     },
     {
       "name": "🐱牛来┃动漫",
