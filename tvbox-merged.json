@@ -4389,6 +4389,15 @@
       "filterable": 1
     },
     {
+      "key": "说明",
+      "name": "⚠️使用说明",
+      "type": 1,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/lubin776/0/refs/heads/main/tvbox/x/lib/使用说明.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "暴风资源",
       "name": "暴风资源(🔥)",
       "type": 1,
@@ -6388,15 +6397,6 @@
       "ext": "https://gh-proxy.com/raw.githubusercontent.com/lubin776/0/refs/heads/main/tvbox/x/lib/菠菜园下载.json"
     },
     {
-      "key": "说明",
-      "name": "⚠️使用说明",
-      "type": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "api": "https://gh-proxy.com/raw.githubusercontent.com/lubin776/0/refs/heads/main/tvbox/x/lib/使用说明.json"
-    },
-    {
       "key": "push_agent",
       "name": "🔗链接┃解析",
       "type": 3,
@@ -7151,52 +7151,16 @@
       "source": "海量直播聚合接口"
     },
     {
-      "name": "综合直播",
-      "url": "http://193.123.86.190:14888/TV/iptv.php",
-      "ua": "bingcha/1.1 (mianfeifenxiang)",
-      "source": "饭太硬"
-    },
-    {
-      "name": "Kimentanm",
+      "name": "Kimentanm1线",
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": "",
-      "source": "饭太硬"
+      "source": "海量直播线路"
     },
     {
       "name": "范明明（需开启V6网络）",
       "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
       "ua": "",
-      "source": "饭太硬"
-    },
-    {
-      "name": "虎牙一起看",
-      "url": "https://sub.ottiptv.cc/huyayqk.m3u",
-      "ua": "okHttp/Mod-1.5.0.0",
-      "source": "饭太硬"
-    },
-    {
-      "name": "斗鱼一起看",
-      "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
-      "ua": "okHttp/Mod-1.5.0.0",
-      "source": "饭太硬"
-    },
-    {
-      "name": "YY轮播",
-      "url": "https://sub.ottiptv.cc/yylunbo.m3u",
-      "ua": "okHttp/Mod-1.5.0.0",
-      "source": "饭太硬"
-    },
-    {
-      "name": "Guovin",
-      "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u",
-      "ua": "",
-      "source": "菠菜pro"
-    },
-    {
-      "name": "Kimentanm1线",
-      "url": "https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-      "ua": "",
-      "source": "嗷呜"
+      "source": "海量直播线路"
     },
     {
       "name": "Kimentanm1线1线",
