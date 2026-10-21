@@ -801,6 +801,12 @@
       "ua": ""
     },
     {
+      "name": "牛播一",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=cctva",
+      "ua": ""
+    },
+    {
       "name": "Kimentanm1线",
       "type": 0,
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
@@ -819,20 +825,26 @@
       "ua": ""
     },
     {
+      "name": "牛播一",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=cctva",
+      "ua": ""
+    },
+    {
       "name": "综合直播",
       "type": 0,
       "url": "http://193.123.86.190:14888/TV/iptv.php",
       "ua": "bingcha/1.1 (mianfeifenxiang)"
     },
     {
+      "name": "牛播一",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=cctva"
+    },
+    {
       "name": "Kimentanm",
       "type": 0,
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
-    },
-    {
-      "name": "范明明（需开启V6网络）",
-      "type": 0,
-      "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u"
     }
   ]
 }
