@@ -65,6 +65,12 @@
       "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": "",
       "source": "海量直播聚合接口"
+    },
+    {
+      "name": "牛播一",
+      "url": "http://127.0.0.1:9978/proxy?do=cctva",
+      "ua": "",
+      "source": "饭太硬"
     }
   ]
 }
