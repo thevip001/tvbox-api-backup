@@ -807,9 +807,51 @@
       "ua": ""
     },
     {
-      "name": "Kimentanm1线",
+      "name": "综合直播",
+      "type": 0,
+      "url": "http://193.123.86.190:14888/TV/iptv.php",
+      "ua": "bingcha/1.1 (mianfeifenxiang)"
+    },
+    {
+      "name": "牛播一",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=cctva",
+      "ua": ""
+    },
+    {
+      "name": "Kimentanm",
       "type": 0,
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "ua": ""
+    },
+    {
+      "name": "虎牙一起看",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+      "ua": "okHttp/Mod-1.5.0.0"
+    },
+    {
+      "name": "斗鱼一起看",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+      "ua": "okHttp/Mod-1.5.0.0"
+    },
+    {
+      "name": "YY轮播",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+      "ua": "okHttp/Mod-1.5.0.0"
+    },
+    {
+      "name": "Guovin",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u",
+      "ua": ""
+    },
+    {
+      "name": "Kimentanm1线",
+      "type": 0,
+      "url": "https://down.nigx.cn/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": ""
     },
     {
@@ -822,12 +864,6 @@
       "name": "Kimentanm1线1线",
       "type": 0,
       "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-      "ua": ""
-    },
-    {
-      "name": "牛播一",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=cctva",
       "ua": ""
     },
     {
