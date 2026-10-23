@@ -783,6 +783,12 @@
       "ua": ""
     },
     {
+      "name": "牛播一",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=cctva",
+      "ua": ""
+    },
+    {
       "name": "Kimentanm1线",
       "type": 0,
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
@@ -798,12 +804,6 @@
       "name": "Kimentanm1线1线",
       "type": 0,
       "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-      "ua": ""
-    },
-    {
-      "name": "牛播一",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=cctva",
       "ua": ""
     },
     {
